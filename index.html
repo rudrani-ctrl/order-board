@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Order Board</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Live Order Board</h1>
+
+<div id="newOrderForm">
+  <h2>Add New Order</h2>
+  <input id="customer" placeholder="Customer Name">
+  <input id="items" placeholder="Item Summary">
+  <textarea id="notes" placeholder="Notes"></textarea>
+  <button onclick="addOrder()">Add Order</button>
+</div>
+
+<div class="board">
+  <div class="column"><h2>New</h2><div id="new"></div></div>
+  <div class="column"><h2>Preparing</h2><div id="preparing"></div></div>
+  <div class="column"><h2>Ready</h2><div id="ready"></div></div>
+  <div class="column"><h2>Collected</h2><div id="collected"></div></div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
